@@ -1,3 +1,7 @@
+# React Clock
+
+This project contains a functional component of a clock. Can be used to teach why we need class components and what is state.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
