@@ -6,7 +6,7 @@ const App = (props) => {
         <div>
             <Clock 
                 icon="sun.svg"
-                timezone={Intl.DateTimeFormat().resolvedOptions().timeZone} 
+                timezone={"Sydney/Australia"} 
                 date={new Date()} 
             />
         </div>
