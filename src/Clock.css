@@ -6,8 +6,14 @@
   text-align: center;
 }
 
+.clock-face {
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: center;
+}
+
 .clock {
-  background: #fff url(/clock.svg) no-repeat center;
+  background: url(/clock.svg) no-repeat center;
   background-size: 88%;
   border-radius: 50%;
   border: 5px solid black;
