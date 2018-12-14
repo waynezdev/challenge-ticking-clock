@@ -4,7 +4,10 @@ import Clock from "./Clock";
 const App = (props) => {
     return (
         <div>
-            <Clock location="Sydney/Australia" date={new Date()} />
+            <Clock 
+                timezone={Intl.DateTimeFormat().resolvedOptions().timeZone} 
+                date={new Date()} 
+            />
         </div>
     );
 }

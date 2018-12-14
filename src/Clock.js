@@ -2,14 +2,13 @@ import React from "react";
 import "./Clock.css";
 
 const Clock = (props) => {
-    const current = props.date;
-    const seconds = current.getSeconds();
-    const minutes = current.getMinutes();
-    const hours = current.getHours();
+    const seconds = props.date.getSeconds();
+    const minutes = props.date.getMinutes();
+    const hours = props.date.getHours();
     
     return (
         <div className="container">
-            <h3 className="label">{props.location}</h3>
+            <h3 className="label">{props.timezone}</h3>
             <article className="clock">
                 <div className="hours-container">
                     <div className="hours" style={{ transform: `rotateZ(${(hours * 30) + (minutes / 2)}deg)`}}></div>
