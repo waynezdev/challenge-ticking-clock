@@ -7,6 +7,7 @@ class Clock extends Component {
         const seconds = this.props.date.getSeconds();
         const minutes = this.props.date.getMinutes();
         const hours = this.props.date.getHours();
+        console.log(`${this.props.timezone} 1`)
         
         
         return (

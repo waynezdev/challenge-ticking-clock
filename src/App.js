@@ -1,4 +1,4 @@
-import React, {Component, Suspense} from 'react';
+import React, {Component} from 'react';
 import Clock from "./Clock";
 
 class App extends Component {
@@ -120,8 +120,8 @@ class App extends Component {
 
         
 
-        return (
-        <div>
+        return [
+        (<div>
 
             {latitude}
 
@@ -130,9 +130,20 @@ class App extends Component {
                 timezone={"Sydney/Australia"}
                 date={new Date()}
             />
-        </div>
+        </div>),
 
-        )
+        (<div>
+
+        {latitude}
+
+        <Clock
+            icon= {latitude !== null? this.getClockIcon() : null }
+            timezone={"Europ/Rome"}
+            date={ new Date(new Date().toLocaleString("en-US", {timeZone: "Europe/Rome"})) }
+        />
+        </div>)
+
+        ]
     }
 }
 
